@@ -51,6 +51,8 @@ cd "${TOOLWD}"
 ./@makec
 # @makec is expected to call checkfailure at the appropriate point(s) in the custom script
 if [ "$level" = "top" ]; then
+    echo
+    echo "TEST"
     ./@testc
 fi
 

@@ -1,1 +1,4 @@
-# empty
+#!/bin/bash
+das2json ${TARGET}.drawio
+python main.py "${CALLERPATH}/${TARGET}".drawio test_jig ${TARGET}.drawio.json
+rm ${TARGET}.drawio.json
